@@ -76,7 +76,7 @@ layout: nil
 	{
 	    'areaid': , 1760
 	    'parentid': 3598,
-	    'type': 3,	    
+	    'type': 4,	    
 	    'name': 'X1a1小区'	
 	}, ...
 	]	//end community
