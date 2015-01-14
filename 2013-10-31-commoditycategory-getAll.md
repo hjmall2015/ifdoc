@@ -27,6 +27,7 @@ layout: nil
 	{
 	    'name': '百货',			//名称
 	    'code': 'all.misc',		//编号	
+	    'img': 'http://company.com/images/NBKSR000000065.jpg',
 	    'level': 1,				//级数
 	    'parentcode': null,	//上级编号
 	    'hassub': false			//是否有下级
@@ -34,6 +35,7 @@ layout: nil
 	{
 	    'name': '日化',
 	    'code': 'all.daily',
+	    'img': 'http://company.com/images/NBKSR000000065.jpg',	    
 	    'level': 1,	    
 	    'parentcode': null,
 	    'hassub': false	    
@@ -41,6 +43,7 @@ layout: nil
 	{
 	    'name': '食品',
 	    'code': 'all.food',
+	    'img': 'http://company.com/images/NBKSR000000065.jpg',	    
 	    'level': 1,	    
 	    'parentcode': null,
 	    'hassub': true	    
@@ -48,6 +51,7 @@ layout: nil
 	{
 	    'name': '休闲食品',
 	    'code': 'all.food.snack',
+	    'img': 'http://company.com/images/NBKSR000000065.jpg',	    
 	    'level': 2,	    
 	    'parentcode': 'all.food',
 	    'hassub': false
