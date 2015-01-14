@@ -16,7 +16,7 @@ layout: nil
     'data': {
 	'categorycode': 'all.daily',		//类别代码
 	'communityareaid': 6019,	//小区的areaid
-	'orderby': 'price',		//排序标准 -- 价格:price; 总销量:sales; 收藏量: fav;
+	'orderby': 'price',		//排序标准 -- 价格:price; 总销量:sales;收藏量: fav(暂不可用);
 	'orderbydirection': 'asc'	//排序方向 -- 升序:asc; 降序:desc
 	'start': 0,			//分页信息
 	'limit': 25			//分页信息
@@ -33,11 +33,11 @@ layout: nil
     'data':{
 	items:[
 	{
-	    'code':'I_6000000000002',			//商品编号
-	    'name':'IPhone6土豪金',		//商品名称
-	    'discountprice': '5000',		//商品现价, 注意是字符串类型(如'5000','5000-5500')
-	    'sellingprice': '5001',		//商品原价, 注意是字符串类型(如'5000','5000-5500')
-	    'sales': 3209,			//总销量	    
+	    'code':'I_6000000000002',		//商品编号
+	    'name':'IPhone6土豪金',			//商品名称
+	    'vendor': '桔子',				//商品厂家
+	    'price': '5000',			//商品现价, 注意是字符串类型(如'5000','5000-5500')
+	    'sales': 3209,				//总销量	    
 	    'hasstock': true,			//区域是否有货
 	    'coverimg': 'http://company.com/images/NBKSR000000065.jpg'	//主图	    
 	},

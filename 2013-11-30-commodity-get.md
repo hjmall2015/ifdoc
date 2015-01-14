@@ -30,100 +30,52 @@ layout: nil
 
 **如果成功**, 返回商品信息．
 
-例1:
+例:
 ```{
     'success': true,
     'data': {
-	    'code': 'I_6000000000002',	//商品编号
-	    'name':'IPhone6土豪金',			//商品名称
-	    'related':{	//相关商品信息,如果无相关商品，则hasitems属性为false, items里无商品
-	    	hasitems: 'true',
-	    	items: [
+	    'name':'IPhone6',			//系列名称
+	    'vendor': '桔子',			//系列厂家
+	    'unit': '捆',				//系列单位
+		'pricerange': '5000~6000',		//系列价格区间,注意是字符串
+	    'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//系列主图
+	    'hasoptions': true,			//是否有选项  
+	    'optionname': '颜色',		//系列选项名称   
+	    'itemcount': 3,				//系列内商品数目，至少为1
+	    'items':［
 	    		{
 	    		'code': 'I_6918000000001',	//商品编号
 	    		'name': 'IPhone6白',		//商品名称
-	    		'nameingroup': '白',		//选项名
-	    		'discountprice': '229',		//售价
-	    		'sellingprice': '230',			//原价
+	    		'option': '白',		//选项名
+	    		'default': true,	//是否为系列内默认商品
+	    		'discountprice': '229',		//售价,注意是字符串
+	    		'sellingprice': '230',		//原价,注意是字符串
 	    		'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
 	    		'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg'],	//详情图
-	    		'extradesc': [{'key': 'aaa', 'value': 'bbb'},{'key': 'ccc', 'value': 'ddd'}]	//额外描述
+	    		'profile': [{'key': 'aaa', 'value': 'bbb'},{'key': 'ccc', 'value': 'ddd'}]	//简介
 	    		},
 	    		{
 	    		'code': 'I_6918000000002',	//商品编号
 	    		'name':'IPhone6土豪金',		//商品名称
-	    		'nameingroup': '土豪金'		//选项名
+	    		'option': '土豪金'		//选项名
+				'default': false,	//是否为系列内默认商品	    		
 	    		'discountprice': '229',		//售价
 	    		'sellingprice': '230',		//原价	    		
 	    		'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
 	    		'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg'],	//详情图
-	    		'extradesc': [{'key': 'aaa', 'value': 'bbb'},{'key': 'ccc', 'value': 'ddd'}]
+	    		'profile': [{'key': 'aaa', 'value': 'bbb'},{'key': 'ccc', 'value': 'ddd'}]	//简介
 	    		},
-				{
+			{
 	    		'code': 'I_6918000000003',	//商品编号
 	    		'name':'IPhone6黑',		//商品名称
+	    		'option': '黑'				//选项名	
 	    		'discountprice': '229',		//售价
 	    		'sellingprice': '230',		//原价	    		
-	    		'nameingroup': '黑'		//选项名	  
+	    		'default': false,	//是否为系列内默认商品
 	    		'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
 	    		'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg']	//详情图 
-	    		'extradesc': [{'key': 'aaa', 'value': 'bbb'},{'key': 'ccc', 'value': 'ddd'}] 		    	
+	    		'profile': [{'key': 'aaa', 'value': 'bbb'},{'key': 'ccc', 'value': 'ddd'}]	//简介		    	
 	    		}	    		
-	    	],			//end groupinfo
-	    'discountprice': '5000',		//售价
-	    'sellingprice': '5001',			//原价
-	    'vendor': '桔子',			//厂家
-	    'unit': '捆',				//规格
-	    'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
-	    'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg'],	//详情图
-    }
-}```
-
-例2:
-```{
-    'success': true,
-    'data': {
-	    'code': 'I_6000000001296',	//商品编号
-	    'name':'ABC牌针织衫L号',			//商品名称
-	    'related':{	//相关商品信息,如果无相关商品，则hasitems属性为false, items里无商品
-	    	hasitems: 'true',
-	    	items: [
-	    		{
-	    		'code': 'I_6000000001296',	//商品编号
-	    		'name': 'ABC牌针织衫XL号',		//商品名称
-	    		'nameingroup': 'XL'		//选项名
-	    		'discountprice': '229',		//售价
-	    		'sellingprice': '230',			//原价	    		
-	    		'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
-	    		'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg'],	//详情图
-	    		'extradesc': [{'key': 'aaa', 'value': 'bbb'},{'key': 'ccc', 'value': 'ddd'}]	//额外描述
-	    		},
-	    		{
-	    		'code': 'I_6000000001297',	//商品编号
-	    		'name':'ABC牌针织衫L号',		//商品名称
-	    		'nameingroup': 'L'		//选项名
-	    		'discountprice': '229',		//售价
-	    		'sellingprice': '230',			//原价	    		
-	    		'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
-	    		'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg'],	//详情图
-	    		'extradesc': [{'key': 'aaa', 'value': 'bbb'},{'key': 'ccc', 'value': 'ddd'}]	//额外描述
-	    		},
-				{
-	    		'code': 'I_6000000001298',	//商品编号
-	    		'name':'ABC牌针织衫M号',		//商品名称
-	    		'nameingroup': 'M'		//选项名	   
-	    		'discountprice': '229',		//售价
-	    		'sellingprice': '230',			//原价	    		
-	    		'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
-	    		'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg'],	//详情图
-	    		'extradesc': [{'key': 'aaa', 'value': 'bbb'},{'key': 'ccc', 'value': 'ddd'}]	//额外描述 		    		
-	    		}	    		
-	    	],			//end groupinfo
-	    'discountprice': '229',		//售价
-	    'sellingprice': '230',			//原价
-	    'vendor': 'ABC',			//厂家
-	    'unit': '捆',				//规格
-	    'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
-	    'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg'],	//详情图
-    }
+	    	]			//end items
+    }	//end data
 }```
