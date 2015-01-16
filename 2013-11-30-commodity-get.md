@@ -7,7 +7,7 @@ type: 'POST'
 layout: nil
 ---
 
-根据商品编号获得详情信息, 包含相关商品信息. 注: 可根据code属性判断相关商品中哪个为当前商品.
+根据商品编号获得详情信息, 包含相关商品信息.
 
 
 ### Request
@@ -34,20 +34,21 @@ layout: nil
 ```{
     'success': true,
     'data': {
-	    'name':'IPhone6',			//系列名称
-	    'vendor': '桔子',			//系列厂家
-	    'unit': '捆',				//系列单位
-		'pricerange': '5000~6000',		//系列价格区间,注意是字符串
-	    'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//系列主图
-	    'hasoptions': true,			//是否有选项  
-	    'optionname': '颜色',		//系列选项名称   
-	    'itemcount': 3,				//系列内商品数目，至少为1
-	    'items':［
+    	'hasgroup': true,			//是否有组, 如无则无组信息
+    	'groupinfo': {				//组信息
+    		'name':'IPhone6',			//组名称
+		'price': '5000~6000',		//组价格,注意是字符串,如'5000-6000','5688'
+		'optiondesc': '颜色',		//选项描述   
+	    	'itemcount': 3				//组内商品数目，至少为1
+    	},
+	'items':［
 	    		{
 	    		'code': 'I_6918000000001',	//商品编号
 	    		'name': 'IPhone6白',		//商品名称
-	    		'option': '白',		//选项名
-	    		'default': true,	//是否为系列内默认商品
+			'vendor': '桔子',		//***商品厂家
+			'unit': '捆',			//***商品单位	    		
+	    		'groupoption': '白',			//###组内选项名
+	    		'groupdefault': true,		//###是否为组内默认商品
 	    		'discountprice': '229',		//售价,注意是字符串
 	    		'sellingprice': '230',		//原价,注意是字符串
 	    		'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
@@ -57,8 +58,10 @@ layout: nil
 	    		{
 	    		'code': 'I_6918000000002',	//商品编号
 	    		'name':'IPhone6土豪金',		//商品名称
-	    		'option': '土豪金'		//选项名
-				'default': false,	//是否为系列内默认商品	    		
+			'vendor': '桔子',		//***商品厂家
+			'unit': '捆',			//***商品单位	   	    		
+	    		'groupoption': '土豪金'		//###组内选项名
+			'groupdefault': false,		//###是否为组内默认商品    		
 	    		'discountprice': '229',		//售价
 	    		'sellingprice': '230',		//原价	    		
 	    		'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
@@ -68,7 +71,10 @@ layout: nil
 			{
 	    		'code': 'I_6918000000003',	//商品编号
 	    		'name':'IPhone6黑',		//商品名称
-	    		'option': '黑'				//选项名	
+			'vendor': '桔子',		//***商品厂家
+			'unit': '捆',			//***商品单位	 	    		
+	    		'groupoption': '黑'			//###选项名
+			'groupdefault': false,		//###是否为组内默认商品	    		
 	    		'discountprice': '229',		//售价
 	    		'sellingprice': '230',		//原价	    		
 	    		'default': false,	//是否为系列内默认商品
