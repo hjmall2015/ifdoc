@@ -16,6 +16,7 @@ layout: nil
 ```{
     'data': {
 		'code': 'I_6000000000002',	//商品编号
+		'communityareaid': 6019		//小区的areaid
     }
 }```
 
@@ -23,6 +24,7 @@ layout: nil
 ```{
     'data': {
 		'code': 'S_0002',	//商品编号
+		'communityareaid': 6019		//小区的areaid
     }
 }```
 
@@ -45,12 +47,14 @@ layout: nil
 	    		{
 	    		'code': 'I_6918000000001',	//商品编号
 	    		'name': 'IPhone6白',		//商品名称
-			'vendor': '桔子',		//***商品厂家
-			'unit': '捆',			//***商品单位	    		
-	    		'groupoption': '白',			//###组内选项名
-	    		'groupdefault': true,		//###是否为组内默认商品
+			'vendor': '桔子',		//商品厂家
+			'origin': '美国',		//商品产地
+			'unit': '捆',			//商品单位	    		
+	    		'groupoption': '白',			//组内选项名
+	    		'groupdefault': true,		//是否为组内默认商品
 	    		'discountprice': '229',		//售价,注意是字符串
 	    		'sellingprice': '230',		//原价,注意是字符串
+	    		'hasstock': true,		//小区是否有货	 
 	    		'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
 	    		'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg'],	//详情图
 	    		'profile': [{'key': 'aaa', 'value': 'bbb'},{'key': 'ccc', 'value': 'ddd'}]	//简介
@@ -58,12 +62,14 @@ layout: nil
 	    		{
 	    		'code': 'I_6918000000002',	//商品编号
 	    		'name':'IPhone6土豪金',		//商品名称
-			'vendor': '桔子',		//***商品厂家
-			'unit': '捆',			//***商品单位	   	    		
+			'vendor': '桔子',		//商品厂家
+			'origin': '美国',		//商品产地
+			'unit': '捆',			//商品单位	   	    		
 	    		'groupoption': '土豪金'		//###组内选项名
 			'groupdefault': false,		//###是否为组内默认商品    		
 	    		'discountprice': '229',		//售价
-	    		'sellingprice': '230',		//原价	    		
+	    		'sellingprice': '230',		//原价
+	    		'hasstock': true,		//小区是否有货	    		
 	    		'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
 	    		'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg'],	//详情图
 	    		'profile': [{'key': 'aaa', 'value': 'bbb'},{'key': 'ccc', 'value': 'ddd'}]	//简介
@@ -71,12 +77,14 @@ layout: nil
 			{
 	    		'code': 'I_6918000000003',	//商品编号
 	    		'name':'IPhone6黑',		//商品名称
-			'vendor': '桔子',		//***商品厂家
-			'unit': '捆',			//***商品单位	 	    		
-	    		'groupoption': '黑'			//###选项名
-			'groupdefault': false,		//###是否为组内默认商品	    		
+			'vendor': '桔子',		//商品厂家
+			'origin': '美国',		//商品产地
+			'unit': '捆',			//商品单位	 	    		
+	    		'groupoption': '黑'			//选项名
+			'groupdefault': false,		//是否为组内默认商品	    		
 	    		'discountprice': '229',		//售价
-	    		'sellingprice': '230',		//原价	    		
+	    		'sellingprice': '230',		//原价	  
+	    		'hasstock': true,		//小区是否有货	   		
 	    		'default': false,	//是否为系列内默认商品
 	    		'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
 	    		'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg']	//详情图 
