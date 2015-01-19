@@ -7,7 +7,7 @@ type: 'POST'
 layout: nil
 ---
 
-根据商品编号获得详情信息, 包含相关商品信息.
+根据商品编号获得详情信息, 包含相关商品信息. 其中小区可为空, 如小区不为空则显示小区库存，否则显示总库存.
 
 
 ### Request
@@ -16,7 +16,7 @@ layout: nil
 ```{
     'data': {
 		'code': 'I_6000000000002',	//商品编号
-		'communityareaid': 6019		//小区的areaid
+		'communityareaid': 6019		//小区的areaid, 可为空
     }
 }```
 
@@ -24,7 +24,7 @@ layout: nil
 ```{
     'data': {
 		'code': 'S_0002',	//商品编号
-		'communityareaid': 6019		//小区的areaid
+		'communityareaid': 6019		//小区的areaid, 可为空
     }
 }```
 
