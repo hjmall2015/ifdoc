@@ -34,20 +34,20 @@ layout: nil
 	    	'contactnumber': '1300012135',	//联系电话
 	    	'detail': 'ABCDEF'	//详细地址
 	},	//end address
+	'items':[{
+			'code':'I_6902088111927',	//商品编号
+			'sellingprice': 13.7,			//售价
+			'coverimg': "/hjmall/management/commodity/6902088111921.jpg",	//主图
+			'amount':2			//数量
+			},
+			{
+			'code':'I_6903148091531',
+			'sellingprice': 65.3,
+			'coverimg': "/hjmall/management/commodity/6902088111921.jpg",	//主图
+			'amount':1
+		}],
 	'createtime': '2014-10-15 23:10:12',
-	'finishtime': '2014-10-17 16:32:25',
-	'status': '正在出货'
-	'items':[
-	{
-	    'seriescover': "/hjmall/management/commodity/6901010119116.jpg",	//系列主图
-	    'seriesname':'健力宝香草冰淇淋汽水（瓶）560ml',		//系列名称
-	    'serial':'6901010119116',	//条码
-	    'sellingprice':4.2,
-	    'amount':3,
-	},
-	...
-	],
-	count:63		//订单中总项数
+	'status': {'name': '正在出货', 'time': '2014-10-15 23:10:12'}		
     }
 }```
 
