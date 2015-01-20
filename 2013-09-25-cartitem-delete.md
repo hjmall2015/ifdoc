@@ -16,7 +16,7 @@ layout: nil
     'sessionid': '10760362195',
     'data':
 	{
-	    'serial':'6902088111927'
+	    'code':'I_6902088111927'
 	}
 }```
 
@@ -29,11 +29,11 @@ layout: nil
     'success': true,
     'data':
 	[{
-	    'serial':'6903148082140',
+	    'code':'I_6903148082140',
 	    'amount': 1
 	},
 	{
-	    'serial':'6903148091531',
+	    'code':'I_6903148091531',
 	    'amount': 1
 	},
 	...

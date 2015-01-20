@@ -25,15 +25,24 @@ layout: nil
     'success': true,
     'data':
 	[{
-	    'serial':'6903148082140',
+	    'code':'I_6903148082140',
+	    'name': 'A牌BB霜',
+	    'price': '12.7',	//售价，注意是字符串
+	    'coverimg': 'http://company.com/images/NBKSR000000065.jpg',
 	    'amount': 1
 	},
 	{
-	    'serial':'6902088111927',
+	    'code':'I_6902088111927',
+		'name': 'A牌BB霜',
+	    'price': '12.7',	//售价，注意是字符串
+	    'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	    
 	    'amount': 2
 	},
 	{
-	    'serial':'6903148091531',
+	    'code':'I_6903148091531',
+		'name': 'A牌BB霜',
+	    'price': '12.7',	//售价，注意是字符串
+	    'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	    
 	    'amount': 1
 	},
 	...

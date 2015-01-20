@@ -15,7 +15,7 @@ layout: nil
 ```{
     'data': {
 	'categorycode': 'all.daily',		//类别代码
-	'communityareaid': 6019,	//小区的areaid
+	'communityareaid': 3999,	//小区的areaid
 	'orderby': 'price',		//排序标准 -- 价格:price; 总销量:sales;收藏量: fav(暂不可用);
 	'orderbydirection': 'asc'	//排序方向 -- 升序:asc; 降序:desc
 	'start': 0,			//分页信息
