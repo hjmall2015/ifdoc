@@ -15,7 +15,6 @@ layout: nil
     'sessionid': '10760362195',
     'data': {
 	'orderserial': 665		//订单编号
-	'paymentserial': '6553287645'	//第三方支付流水号
 	'paymenttype': 'alipay'		//第三方支付类型--alipay:支付宝
     }
 }```

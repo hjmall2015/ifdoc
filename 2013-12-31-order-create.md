@@ -34,7 +34,8 @@ layout: nil
 	'code':'I_6903148091531',
 	'sellingprice': 65.3,
 	'amount':1
-	}]
+	}],
+	'totalprice': 92.7	//总价 
     }
 }```
 
@@ -44,7 +45,10 @@ layout: nil
 
 
 ```{
-    'success': true
+    'success': true,
+    'data':{
+		'serial': 665
+	}
 }```
 
 
