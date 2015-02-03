@@ -16,7 +16,7 @@ layout: nil
     'sessionid': '10760362195',
     'data': {
 	'id': 2,				//序号
-	'addressname': '办公室',	//地址名称
+	'caption': '办公室',	//地址名称
 	'provinceareaid':5,	//省
 	'cityareaid':27,	//市
 	'districtareaid':391,	//区

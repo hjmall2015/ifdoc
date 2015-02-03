@@ -27,7 +27,7 @@ layout: nil
 	items:[
 	{
 	'id': 1,					//地址id,　用于修改丶删除等操作
-	'addressname': '办公室',	//地址名称
+	'caption': '办公室',	//地址名称
 	'provinceareaid':5,	//省
 	'cityareaid':27,	//市
 	'districtareaid':391,	//区
