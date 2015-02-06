@@ -14,9 +14,7 @@ layout: nil
 
 ```{
     'sessionid': '10760362195',
-    'data': {
-	'ids': [2,4,5]				
-    }
+    'data': [2,4,5]				
 }```
 
 ### Response
@@ -29,21 +27,34 @@ layout: nil
     'data':{
 	items:[
 	{
-	    'id': 1,					//地址id,　用于修改丶删除等操作
-	    'name': '张三',				//姓名
-	    'mobile': '13611113333',			//手机
-	    'postcode': '100190',			//邮编
-	    'city': '北京',				//市
-	    'district': '海淀区',			//区
-	    'address': 'X街Y号',			//详细
+	'id': 1,					//地址id,　用于修改丶删除等操作
+	'caption': '办公室',	//地址名称
+	'provinceareaid':5,	//省
+	'cityareaid':27,	//市
+	'districtareaid':391,	//区
+	'communityareaid':1659,	//小区
+	'provincename':'北京',	//省名
+	'cityname':'北京',	//市名
+	'districtname':'海淀',	//区名
+	'communityname': '五道口',	//小区名
+	'contactname': '张三',	//联系人
+	'contactnumber': '1300012135',	//联系电话
+	'detail': 'X街Y号'	//详细地址
 	},
 	{
-	    'id': 3,					//地址id,　用于修改丶删除等操作
-	    'mobile': '13611112222',			//手机
-	    'postcode': '100230',			//邮编
-	    'city': '天津',				//市
-	    'district': '南开区',			//区
-	    'address': 'P街Q号',			//详细
+	 'id': 3,					//地址id,　用于修改丶删除等操作
+	'addressname': '家里',	//地址名称
+	'provinceareaid':5,	//省
+	'cityareaid':27,	//市
+	'districtareaid':391,	//区
+	'communityareaid':1659,	//小区
+	'provincename':'北京',	//省名
+	'cityname':'北京',	//市名
+	'districtname':'海淀',	//区名
+	'communityname': '五道口',	//小区名
+	'contactname': '李四',	//联系人
+	'contactnumber': '1311122233',	//联系电话
+	'detail': 'S街T号'	//详细地址
 	},
 	...
 	]
