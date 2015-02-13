@@ -7,13 +7,12 @@ type: 'POST'
 layout: nil
 ---
 
-获取所有需求, 带分页.
+获取所有需求,带分页,按发布时间由近至远排序.
 
 ### Request
 
 
 ```{
-    'sessionid': '10760362195',
     'data':
 	{
 	'start': 0,			//分页信息
@@ -30,6 +29,9 @@ layout: nil
     'data':{
 	items:[
 	{
+		'customerid': '13011112222';	//用户id
+		'customernickname': 'zhangsan';	//用户昵称
+		'customeravatar': 'http://cache.soso.com/wenwen/sg/i/logo.png';	//用户头像
 		'title':'SD卡',		//标题
 	    'userprice':'100',	//用户提供的价格
 	    'approvedprice':'150',	//核定价格
@@ -38,6 +40,9 @@ layout: nil
 	    'expiretime': '2015-10-15 23:10:12'	//截止时间
 	},
 	{
+		'customerid': '13011112222';	//用户id
+		'customernickname': 'zhangsan';	//用户昵称
+		'customeravatar': 'http://cache.soso.com/wenwen/sg/i/logo.png';	//用户头像	
 		'title':'移动电源',		//标题
 	    'userprice':'200',	//用户提供的价格
 	    'approvedprice':'210',	//核定价格
