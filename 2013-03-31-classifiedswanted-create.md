@@ -16,10 +16,11 @@ layout: nil
     'sessionid': '10760362195',
     'data':
 	{
-	    'title':'SD卡',		//标题
-	    'userprice':'100',	//用户提供的价格
-	    'intro':'体积越小越好',	//简介
-	    'expiretime': '2015-10-15 23:10:12'	//截止时间
+	'initialtitle': 'SD卡',		//原始标题
+	'introtext': '体积越小越好',	//文本简介
+	'introvoiceid': '60532907',	//语音简介ID
+	'contactnumber': '1300012135',	//联系电话
+	'createtime':'2015-10-15 23:10:12' //发布时间
   	}
 }```
 
