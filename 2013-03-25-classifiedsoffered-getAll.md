@@ -1,7 +1,7 @@
 ---
 category: Stuff
 path: '/app/classifiedsoffered/getAll'
-title: '[L7]获取所有需求'
+title: '[L7]获取所有供应'
 type: 'POST'
 
 layout: nil
