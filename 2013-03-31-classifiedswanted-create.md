@@ -19,8 +19,7 @@ layout: nil
 	'initialtitle': 'SD卡',		//原始标题
 	'initialintrotext': '体积越小越好',	//原始文本简介
 	'initialintrovoiceid': '60532907',	//原始语音简介ID
-	'contactnumber': '1300012135',	//联系电话
-	'createtime':'2015-10-15 23:10:12' //发布时间
+	'contactnumber': '1300012135'	//联系电话
   	}
 }```
 
