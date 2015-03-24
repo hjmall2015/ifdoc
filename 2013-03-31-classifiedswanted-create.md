@@ -1,7 +1,7 @@
 ---
 category: Stuff
-path: '/app/classifiedswanted/create'
-title: '[L1]发布需求'
+path: '/app/classifiedswanted/createText'
+title: '[L1]发布文本需求'
 type: 'POST'
 
 layout: nil
@@ -18,7 +18,6 @@ layout: nil
 	{
 	'initialtitle': 'SD卡',		//原始标题
 	'initialintrotext': '体积越小越好',	//原始文本简介
-	'initialintrovoiceid': '60532907',	//原始语音简介ID
 	'contactnumber': '1300012135'	//联系电话
   	}
 }```

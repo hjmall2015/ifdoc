@@ -1,7 +1,7 @@
 ---
 category: Stuff
-path: '/app/classifiedswanted/getDetail'
-title: '[L3]获取需求详情'
+path: '/app/classifiedsoffered/getDetail'
+title: '[L8]获取供应详情'
 type: 'POST'
 
 layout: nil
@@ -15,7 +15,7 @@ layout: nil
 ```{
     'data':
 	{
-	'id': 5			//需求id
+	'code': 'I_6000000000002'			//供应id
   	}
 }```
 
@@ -26,14 +26,11 @@ layout: nil
 ```{
     'success': true,
     'data':{
-    	'id': 5,	//需求id
-		'title':'SD卡',		//最终标题
-		'price':'100',		//价格
-		'introtext': '体积越小越好',	//最终文本简介
-		'contactnumber': '1300012135',	//联系电话
-		'contactaddress': 'A区B楼',	//联系地址
-	    'createtime':'2015-10-15 23:10:12', //发布时间
-	    'starttime': '2015-10-15 23:10:12',	//开始时间
-	    'endtime': '2015-10-15 23:10:12'	//结束时间
+		"title": "蜂蜜",		//标题
+		'code': 'I_6000000000002',	//供应编号
+		'discountprice': '229',		//售价
+        "thumbnail": "http://cache.soso.com/wenwen/sg/i/logo.png",	//缩略图
+        'coverimg': 'http://company.com/images/NBKSR000000065.jpg',	//主图
+        'detailimgs': ['http://company.com/detailimages/NBKSR000000065_1.jpg', 'http://company.com/detailimages/NBKSR000000065_2.jpg']	//详情图
     }
 }```

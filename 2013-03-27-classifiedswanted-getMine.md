@@ -1,13 +1,13 @@
 ---
 category: Stuff
-path: '/app/classifiedswanted/getAll'
-title: '[L2]获取所有需求'
+path: '/app/classifiedswanted/getMine'
+title: '[L5]获取我的需求'
 type: 'POST'
 
 layout: nil
 ---
 
-获取所有需求,带分页,按发布时间由近至远排序.
+获取我发布的所有需求,带分页,按发布时间由近至远排序.
 
 ### Request
 
@@ -40,6 +40,6 @@ layout: nil
 	},
 	...
 	],
-	count:15	//总数
+	count:3		//总数
     }
 }```

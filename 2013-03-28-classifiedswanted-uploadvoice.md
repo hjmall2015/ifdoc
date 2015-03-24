@@ -1,7 +1,7 @@
 ---
 category: Stuff
-path: '/app/classifiedswanted/uploadVoice'
-title: '[L4]上传语音'
+path: '/app/classifiedswanted/createVoice'
+title: '[L4]发布语音需求'
 type: 'POST'
 
 layout: nil
@@ -12,8 +12,11 @@ layout: nil
 ### Request
 
 
+```initialtitle: SD卡		//原始标题
+initialintrovoice: 60532907	//原始语音简介ID
+contactnumber: 1300012135	//联系电话
+sessionid: 10760362195
 ```
-略```
 
 ### Response
 
@@ -21,8 +24,5 @@ layout: nil
 
 ```Status: 200```
 ```{
-    'success': true,
-    'data':{
-		'id': '60532907'	//语音ID
-	}
+    'success': true
 }```

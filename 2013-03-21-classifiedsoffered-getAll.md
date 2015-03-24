@@ -29,14 +29,17 @@ layout: nil
     'data':{
 	items:[
 	{
+		"code": "I_6000000000002",		//供应编号	
 		"title": "蜂蜜",		//标题
         "thumbnail": "http://cache.soso.com/wenwen/sg/i/logo.png"	//缩略图
 	},
 	{
+		"code": "I_6000000000003",		//供应编号
 		 "title": "快餐",	//标题
         "thumbnail": "http://cache.soso.com/wenwen/sg/i/logo.png"	//缩略图
 	},
 	...
-	]
+	],
+	count:15	//总数
     }
 }```
